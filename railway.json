@@ -1,0 +1,16 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "nixpacksConfig": {
+      "phases": {
+        "setup": {
+          "nixPkgs": ["python3"]
+        }
+      }
+    }
+  },
+  "deploy": {
+    "healthcheckPath": "/",
+    "restartPolicyType": "ALWAYS"
+  }
+}
